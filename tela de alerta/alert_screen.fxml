@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.ativ12.ativ12.MainController">
+
+    <top>
+        <HBox spacing="10" style="-fx-background-color: black; -fx-padding: 10; -fx-alignment: center;">
+            <Button text="←" onAction="#handleBack"/>
+            <Label text="TELA DE ALERTA" style="-fx-text-fill: white; -fx-font-weight: bold;"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="⋯" onAction="#handleMenu"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="10" style="-fx-padding: 20; -fx-alignment: center;">
+            <!-- Treinamentos Completos -->
+            <Label text="Treinamentos completos:" style="-fx-font-weight: bold;"/>
+            <ScrollPane prefHeight="150" prefWidth="300">
+                <VBox fx:id="completedTrainingsList" spacing="5" style="-fx-padding: 10;"/>
+            </ScrollPane>
+
+            <!-- Treinamentos Pendentes -->
+            <Label text="Treinamentos pendentes:" style="-fx-font-weight: bold; -fx-padding: 10 0 0 0;"/>
+            <ScrollPane prefHeight="150" prefWidth="300">
+                <VBox fx:id="pendingTrainingsList" spacing="5" style="-fx-padding: 10;"/>
+            </ScrollPane>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,77 @@
+/* ======= TEMA DARK MODERNO ======= */
+.root {
+    -fx-background-color: #121212; /* Fundo escuro */
+    -fx-padding: 20;
+}
+
+/* ======= BARRA SUPERIOR ======= */
+.hbox-top {
+    -fx-background-color: #1e1e1e; /* Tom de cinza escuro */
+    -fx-padding: 10;
+    -fx-alignment: center;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: #BB86FC; /* Roxo neon */
+}
+
+/* ======= BOTÕES SUPERIORES ======= */
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+/* Efeito de hover para botões */
+.button:hover {
+    -fx-text-fill: #BB86FC; /* Roxo neon */
+    -fx-effect: dropshadow(gaussian, #BB86FC, 10, 0.5, 0, 0);
+}
+
+/* ======= TÍTULOS ======= */
+.label-title {
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* ======= SCROLLPANE COM LISTAS ======= */
+.scroll-pane {
+    -fx-border-color: #BB86FC;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #1e1e1e;
+}
+
+/* ======= ITENS DE TREINAMENTO ======= */
+.completed-item {
+    -fx-background-color: #4CAF50; /* Verde escuro */
+    -fx-text-fill: white;
+    -fx-padding: 8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-transition: all 0.3s;
+}
+
+/* Efeito ao passar o mouse em Treinamentos Concluídos */
+.completed-item:hover {
+    -fx-background-color: #66bb6a; /* Verde mais claro */
+    -fx-effect: dropshadow(gaussian, #66bb6a, 10, 0.5, 0, 0);
+}
+
+/* ======= ITENS DE TREINAMENTO PENDENTE ======= */
+.pending-item {
+    -fx-background-color: #E53935; /* Vermelho escuro */
+    -fx-text-fill: white;
+    -fx-padding: 8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-transition: all 0.3s;
+}
+
+/* Efeito ao passar o mouse em Treinamentos Pendentes */
+.pending-item:hover {
+    -fx-background-color: #ef5350; /* Vermelho mais claro */
+    -fx-effect: dropshadow(gaussian, #ef5350, 10, 0.5, 0, 0);
+}
