@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projetogp.projeto_gp.JanelaInicialController" style="-fx-background-color: black;">
+    <children>
+        <VBox alignment="TOP_CENTER" spacing="10" maxWidth="400" maxHeight="600" style="-fx-padding: 20;">
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <StackPane alignment="CENTER" style="-fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 50px;">
+                <ImageView fx:id="imgPerfil" fitWidth="60" fitHeight="60" preserveRatio="true"
+                           style="
+           -fx-background-radius: 30px;
+           -fx-border-radius: 30px;
+           -fx-border-color: white;
+           -fx-border-width: 2px;"/>
+                </StackPane>
+            </HBox>
+
+            <TextField fx:id="txtPesquisa" promptText="Pesquisar" style="-fx-background-color: #D8C6E5; -fx-padding: 5;"/>
+
+            <VBox fx:id="listaUsuarios" spacing="10"/>
+        </VBox>
+
+        <!-- Botão Adicionar -->
+        <Button fx:id="btnAdicionar" text="Adicionar" onAction="#abrirCadastro"
+                style="
+                -fx-background-color: #007BFF;
+                -fx-text-fill: white;
+                -fx-font-size: 16px;
+                -fx-font-weight: bold;
+                -fx-background-radius: 50px;
+                -fx-padding: 10 20;
+                -fx-min-width: 150px;
+                -fx-cursor: hand;
+                -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 255, 0.5), 10, 0, 0, 4);"
+                StackPane.alignment="BOTTOM_CENTER"/>
+    </children>
+</StackPane>
