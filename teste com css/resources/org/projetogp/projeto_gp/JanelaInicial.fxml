@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane stylesheets="@styles-telaInicial.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projetogp.projeto_gp.JanelaInicialController">
+<ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background: black;">
+
+
+    <VBox alignment="TOP_CENTER" maxWidth="400" spacing="15">
+        <!-- Espaçamento superior -->
+        <padding>
+            <Insets bottom="30" left="20" right="20" top="30" />
+        </padding>
+
+        <!-- Imagem de perfil -->
+        <StackPane>
+            <ImageView fx:id="imgPerfil" fitHeight="80" fitWidth="80" preserveRatio="true" />
+        </StackPane>
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="322.0">
+            <children>
+                <ImageView fx:id="imgLupa" fitHeight="40" fitWidth="40" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin></ImageView>
+
+              <!-- Campo de pesquisa -->
+              <TextField fx:id="txtPesquisa" maxWidth="300" minWidth="209.0" prefHeight="34.0" prefWidth="209.0" promptText="Pesquisar" />
+            </children>
+            <padding>
+               <Insets left="10.0" />
+            </padding>
+         </HBox>
+
+        <!-- Lista de usuários -->
+        <VBox fx:id="listaUsuarios" spacing="10">
+            <styleClass>usuario-label</styleClass>
+        </VBox>
+
+        <!-- Botão Adicionar fixado embaixo -->
+        <Pane VBox.vgrow="ALWAYS" />
+        <Button fx:id="btnAdicionar" maxWidth="200" onAction="#abrirCadastro" text="Adicionar" />
+    </VBox>
+</ScrollPane>
+</StackPane>
