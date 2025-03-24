@@ -8,7 +8,7 @@
 
     <!-- ScrollPane principal para rolar toda a tela -->
     <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;">
-        <VBox alignment="TOP_LEFT" spacing="20" style="-fx-background-color: black;">
+        <VBox alignment="TOP_LEFT" spacing="20" style="-fx-background-color: black; -fx-padding: 20;">
 
             <!-- Cabeçalho com título e botão de voltar -->
             <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: black;">
