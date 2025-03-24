@@ -1,0 +1,107 @@
+/* Define o fundo da tela */
+StackPane {
+    -fx-background-color: black;
+}
+
+/* Estilo da VBox que organiza os elementos */
+VBox {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+    -fx-max-width: 400;
+    -fx-max-height: 600;
+    -fx-padding: 20;
+}
+
+/* Estiliza os rótulos */
+Label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* Estiliza o título principal */
+Label:first-of-type {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Estilo para os campos de entrada */
+TextField, ComboBox {
+    -fx-pref-width: 250px;
+    -fx-padding: 5px;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-color: black;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Efeito ao focar nos campos */
+TextField:focused, ComboBox:focused {
+    -fx-border-color: white;
+    -fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 0);
+}
+
+/* Estiliza os botões */
+Button {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 0);
+}
+
+.usuario-label {
+    -fx-text-fill: white; /* Ou outra cor que contraste melhor */
+    -fx-font-size: 14px;
+}
+
+TextField:focused, ComboBox:focused {
+    -fx-border-color: white;
+    -fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 0);
+}
+
+/* Fundo do dropdown */
+.combo-box-popup .list-view {
+    -fx-background-color: black;
+}
+
+/* Estilo padrão dos itens */
+.combo-box-popup .list-cell {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+/* Quando o mouse passa por cima */
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #7A7A7A; /* Cinza escuro */
+    -fx-text-fill: white;
+}
+
+/* Quando um item está selecionado no dropdown */
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #1E90FF; /* Azul para destaque */
+    -fx-text-fill: white;
+}
+
+/* Quando um item está selecionado e aparece na ComboBox fechada */
+.combo-box .list-cell {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+
+
+
+

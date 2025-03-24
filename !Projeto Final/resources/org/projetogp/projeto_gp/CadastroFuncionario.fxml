@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane stylesheets="@styles-cadastro.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projetogp.projeto_gp.CadastroFuncionarioController" >
+        <VBox alignment="CENTER" spacing="10" maxWidth="400" maxHeight="600" style="-fx-padding: 20;">
+            <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: black;">
+                <!-- Botão de voltar no canto esquerdo -->
+                <Button fx:id="btnVoltar" onAction="#carregarTela" styleClass="button-voltar" text="&lt;" />
+
+                <!-- Espaçador para centralizar o título -->
+                <Region HBox.hgrow="ALWAYS" />
+
+                <!-- Título centralizado -->
+                <Label text="Cadastro do funcionário" style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+                <!-- Espaçador para equilibrar o layout -->
+                <Region HBox.hgrow="ALWAYS" />
+            </HBox>
+
+            <Label text="Nome:" style="-fx-text-fill: white;"/>
+            <TextField fx:id="txtNome"/>
+            <Label text="Email:" style="-fx-text-fill: white;"/>
+            <TextField fx:id="txtEmail"/>
+            <Label text="Função:" style="-fx-text-fill: white;"/>
+            <ComboBox fx:id="cbFuncao"/>
+            <Label text="Treinamento:" style="-fx-text-fill: white;"/>
+            <ComboBox fx:id="cbTreinamento"/>
+            <Label text="Validade do treino:" style="-fx-text-fill: white;"/>
+            <ComboBox fx:id="cbValidade"/>
+            <Button text="Cadastrar" fx:id="btnCadastrar" onAction="#cadastrarFuncionario" stylesheets="styles-cadastro.css"/>
+        </VBox>
+</StackPane>

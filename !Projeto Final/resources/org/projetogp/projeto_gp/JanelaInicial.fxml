@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane stylesheets="@styles-telaInicial.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.14-internal" fx:controller="org.projetogp.projeto_gp.JanelaInicialController">
+
+    <VBox alignment="TOP_CENTER" maxWidth="400" spacing="15">
+        <!-- Espaçamento superior -->
+        <padding>
+            <Insets bottom="30" left="20" right="20" top="30" />
+        </padding>
+
+        <!-- Imagem de perfil -->
+        <StackPane>
+            <ImageView fx:id="imgPerfil" fitHeight="80" fitWidth="80" preserveRatio="true" />
+        </StackPane>
+
+        <!-- Campo de pesquisa centralizado -->
+        <VBox alignment="CENTER">
+            <StackPane>
+                <TextField fx:id="txtPesquisa" prefWidth="400" promptText="Pesquisar"
+                           style="-fx-font-size: 14px;"/>
+                <ImageView fx:id="imgLupa" fitHeight="20" fitWidth="20" preserveRatio="true"
+                           translateX="-190"/> <!-- Ajuste fino para posicionar corretamente -->
+            </StackPane>
+        </VBox>
+
+        <!-- Lista de usuários -->
+        <VBox fx:id="listaUsuarios" spacing="10">
+            <styleClass>usuario-label</styleClass>
+        </VBox>
+
+        <!-- Botão Adicionar fixado embaixo -->
+        <Pane VBox.vgrow="ALWAYS" />
+        <Button fx:id="btnAdicionar" maxWidth="200" onAction="#abrirCadastro" text="Adicionar" />
+        <Button fx:id="btnHistorico" maxWidth="200" onAction="#abrirHistorico" text="Histórico" />
+
+    </VBox>
+
+</StackPane>
