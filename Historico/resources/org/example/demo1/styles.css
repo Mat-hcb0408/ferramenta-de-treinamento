@@ -1,0 +1,161 @@
+/* Cor de fundo e padding geral da aplicação */
+.root {
+    -fx-background-color: #121212; /* Fundo mais escuro */
+    -fx-padding: 20px;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.5, 0, 10); /* Sombra suave para a aplicação */
+}
+
+.scroll-pane {
+    -fx-background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente */
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: rgba(255, 255, 255, 0.1); /* Conteúdo também fica semi-transparente */
+}
+
+.scroll-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.3); /* Cor discreta */
+    -fx-opacity: 0.5; /* Deixa as barras levemente visíveis */
+}
+
+
+/* Título principal */
+.label-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* Texto branco */
+    -fx-padding: 10px 0;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 2, 0.5, 2, 2); /* Sombra no texto */
+}
+
+/* Container de perfil */
+.profile-container {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 15px;
+    -fx-border-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 4);
+}
+
+/* Efeito de hover */
+.profile-container:hover {
+    -fx-background-color: #333333;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0.5, 0, 8);
+}
+
+/* Nome do perfil */
+.label-name {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+/* Hover para o nome do perfil */
+.profile-container:hover .label-name {
+    -fx-text-fill: #00bcd4;
+}
+
+/* Texto de conteúdo */
+.label-content {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff;
+}
+
+/* Aviso em vermelho */
+.label-warning {
+    -fx-font-size: 14px;
+    -fx-text-fill: #f44336;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 1, 0.5, 1, 1);
+}
+
+/* Estilo do botão */
+.button-standard {
+    -fx-background-color: #00796b;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 24px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.5, 0, 2);
+}
+
+/* Efeito de hover para os botões */
+.button-standard:hover {
+    -fx-background-color: #004d40;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 6, 0.5, 0, 3);
+}
+
+/* Estilo dos círculos de perfil */
+.circle-profile {
+    -fx-fill: #2196F3;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0.5, 0, 2);
+}
+
+/* Hover nos círculos */
+.circle-profile:hover {
+    -fx-fill: #00bcd4;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Estilo para os vboxes */
+.vbox {
+    -fx-spacing: 25px;
+}
+
+/* Alinhamento das caixas de perfil */
+.hbox {
+    -fx-alignment: center-left;
+    -fx-spacing: 20px;
+}
+
+/* Fundo alternado para linhas de histórico */
+.vbox > .label:nth-child(even) {
+    -fx-background-color: #333333;
+}
+
+/* Melhorias gerais */
+.root, .profile-container, .vbox {
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: #444444;
+    -fx-border-radius: 8px;
+}
+
+/* Ajustes para labels */
+.vbox > .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5px 0;
+    -fx-alignment: center-left;
+}
+
+/* Hover nas labels */
+.vbox > .label:hover {
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff;
+}
+
+/* Estilização para feitos */
+.label-feitos {
+    -fx-font-size: 16px;
+    -fx-text-fill: #4caf50;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 1, 0.5, 1, 1);
+}
+
+/* Status de feito e pendente */
+.label-status-feito {
+    -fx-text-fill: #4CAF50;
+    -fx-font-weight: bold;
+}
+
+.label-status-pendente {
+    -fx-text-fill: #F44336;
+    -fx-font-weight: bold;
+}

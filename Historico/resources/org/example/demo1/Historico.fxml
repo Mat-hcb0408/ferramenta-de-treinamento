@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<?import javafx.scene.image.ImageView?>
+<StackPane style="-fx-background-color: black; -fx-padding: 20px;" stylesheets="@styles.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="org.example.demo1.HistoricoController">
+
+    <!-- ScrollPane principal para rolar toda a tela -->
+    <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;">
+        <VBox alignment="TOP_LEFT" spacing="20" style="-fx-background-color: black;">
+
+            <Label styleClass="label-title" text="Histórico de Treinamento" />
+
+            <!-- Perfil 1 -->
+            <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: black;">
+                <Button fx:id="btnAtualizar1" onAction="#atualizarPerfil1" styleClass="button-standard" text="Exibir Informações" />
+                <ImageView fx:id="profileImage1" fitWidth="80" fitHeight="80" preserveRatio="true" />
+                <Label styleClass="label-name" text="Guilherme Rocha" />
+            </HBox>
+
+            <!-- Histórico de treinamentos feitos e pendentes -->
+            <Label styleClass="label-content" text="Feitos" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;">
+                <VBox fx:id="vboxHistoricoFeitos1" alignment="TOP_LEFT" spacing="5" style="-fx-background-color: black;">
+                    <!-- Aqui você pode aplicar o estilo específico de status para Feito -->
+                    <Label styleClass="label-status-feito" text="Treinamento concluído em 20/03/2025" />
+                </VBox>
+            </ScrollPane>
+
+            <Label styleClass="label-content" text="Pendentes" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;">
+                <VBox fx:id="vboxHistoricoPendentes1" alignment="TOP_LEFT" spacing="5" style="-fx-background-color: black;">
+                    <!-- Aqui você pode aplicar o estilo específico de status para Pendente -->
+                    <Label styleClass="label-status-pendente" text="Treinamento pendente: 25/03/2025" />
+                </VBox>
+            </ScrollPane>
+
+            <!-- Perfil 2 -->
+            <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: black;">
+                <Button fx:id="btnAtualizar2" onAction="#atualizarPerfil2" styleClass="button-standard" text="Exibir Informações" />
+                <ImageView fx:id="profileImage2" fitWidth="80" fitHeight="80" preserveRatio="true" />
+                <Label styleClass="label-name" text="Ana Souza" />
+            </HBox>
+
+            <!-- Histórico de treinamentos feitos e pendentes -->
+            <Label styleClass="label-content" text="Feitos" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;">
+                <VBox fx:id="vboxHistoricoFeitos2" alignment="TOP_LEFT" spacing="5" style="-fx-background-color: black;">
+                    <Label styleClass="label-status-feito" text="Treinamento feito: 18/03/2025" />
+                </VBox>
+            </ScrollPane>
+
+            <Label styleClass="label-content" text="Pendentes" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;">
+                <VBox fx:id="vboxHistoricoPendentes2" alignment="TOP_LEFT" spacing="5" style="-fx-background-color: black;">
+                    <Label styleClass="label-status-pendente" text="Treinamento pendente: 22/03/2025" />
+                </VBox>
+            </ScrollPane>
+
+            <!-- Perfil 3 -->
+            <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: black;">
+                <Button fx:id="btnAtualizar3" onAction="#atualizarPerfil3" styleClass="button-standard" text="Exibir Informações" />
+                <ImageView fx:id="profileImage3" fitWidth="80" fitHeight="80" preserveRatio="true" />
+                <Label styleClass="label-name" text="Carlos Pereira" />
+            </HBox>
+
+            <!-- Histórico de treinamentos feitos e pendentes -->
+            <Label styleClass="label-content" text="Feitos" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;">
+                <VBox fx:id="vboxHistoricoFeitos3" alignment="TOP_LEFT" spacing="5" style="-fx-background-color: black;">
+                    <Label styleClass="label-status-feito" text="Treinamento feito: 15/03/2025" />
+                </VBox>
+            </ScrollPane>
+
+            <Label styleClass="label-content" text="Pendentes" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;">
+                <VBox fx:id="vboxHistoricoPendentes3" alignment="TOP_LEFT" spacing="5" style="-fx-background-color: black;">
+                    <Label styleClass="label-status-pendente" text="Treinamento pendente: 30/03/2025" />
+                </VBox>
+            </ScrollPane>
+
+            <!-- Labels com texto de aviso ou status (texto branco agora) -->
+            <Label fx:id="lblNome" styleClass="label-content" text="Guilherme Rocha" />
+
+            <!-- Apliquei a classe label-status para garantir texto branco -->
+            <Label fx:id="lblAviso" styleClass="label-warning label-status" text="AVISO!\nÚltimo treinamento feito em 22/02/2069" textFill="WHITE" />
+
+            <!-- Botão para atualizar -->
+            <Button styleClass="button-standard" text="Atualizar Informações" />
+        </VBox>
+    </ScrollPane>
+</StackPane>
