@@ -28,6 +28,6 @@
         <ComboBox fx:id="cbTreinamento"/>
         <Label text="Validade do treino:" style="-fx-text-fill: white;"/>
         <ComboBox fx:id="cbValidade"/>
-        <Button text="Cadastrar" fx:id="btnCadastrar" onAction="#AtualizarFuncionario" stylesheets="styles-cadastro.css"/>
+        <Button text="Cadastrar" fx:id="btnCadastrar" onAction="#AtualizarFuncionario" />
     </VBox>
 </StackPane>
